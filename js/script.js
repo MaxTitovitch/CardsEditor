@@ -21,8 +21,8 @@ let isExistId = function (id1, id2) {
 
 let cardConectHundler = function(event){
     if(event.ctrlKey == true){
-      $(this).addClass('outline');
       if(queue == null) {
+      $(this).addClass('outline');
         queue = $(this);
       } else {
         if (isExistId(queue.data('id'),$(this).data('id'))){
